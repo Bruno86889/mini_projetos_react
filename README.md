@@ -1,6 +1,9 @@
 # Mini Projetos React
 Série de mini projetos feitos para demonstrar meu aprendizado na biblioteca React.
 
+## Veja os em ação em
+https://mini-projetos-react.vercel.app/
+
 ## Ideias
 
 - [ ] Calculadora
