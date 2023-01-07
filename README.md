@@ -6,13 +6,13 @@ Série de mini projetos feitos para demonstrar meu aprendizado na biblioteca Rea
 - [ ] Calculadora
 - [ ] Citações
 - [ ] Galeria de fotos
-- [ ] Gerador de cores aleatórias
+- [x] ~~Gerador de cores aleatórias~~
 - [ ] Image Gallery
 - [ ] Kanban
 - [ ] Luz
 - [ ] Mudar cor pela voz
 - [ ] Piano
-- [ ] Piano
+- [x] ~~Pontos~~
 - [ ] Quadro de avisos
 - [ ] Quiz
 - [ ] Simulador de quadro de avisos

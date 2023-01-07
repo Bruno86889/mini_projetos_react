@@ -1,7 +1,26 @@
-.container{
+.__container{
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
     padding: 1em;
+    align-items: center;
+    flex-direction: column;
+}
+
+.__navigation{
+    height: 100%;
+    width: 100%;
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+.__navigationItem{
+    font-size: 1em;
+    text-decoration: none;
+    margin: .5em 0;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(5, 5, 58);
 }

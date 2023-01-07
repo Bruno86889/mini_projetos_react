@@ -1,0 +1,43 @@
+:root{
+    --text-color: rgb(92, 169, 82);
+}
+.hex{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    transition: .5s background;
+}
+
+.hex__btn{
+    mix-blend-mode: difference;
+    color: rgb(0, 0, 0);
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border: none;
+    background-color: #a45555;
+    border-radius: .75rem;
+    text-transform: uppercase;
+    user-select: none;
+    box-shadow: 0 2px 4px -3px yellow;
+    text-rendering: optimizeLegibility;
+    outline: none;
+    text-decoration: none;
+}
+
+.hex__btn:active{
+    background-color: #ffffffa0;
+}
+
+.hex__code{
+    width: max-content;
+    height: max-content;
+    color: var(--text-color);
+    font-size: 2em;
+    letter-spacing: .25em;
+    mix-blend-mode: difference;
+}
