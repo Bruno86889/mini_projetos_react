@@ -3,17 +3,28 @@ import HexColor from "@pages/HexColor/main"
 import Home from "@pages/Home"
 import Points from "@pages/Points/main";
 
-export const projectRoutes: RouteObject[] = [
+const assetsPath = "/assets/"
+export const projectRoutes: Project[] = [
     {
+        name: "random color generator",
         path: "randomColor",
-        element: <HexColor />
+        element: <HexColor />,
+        imgPath: "random_color.png",
     },
     {
+        name:"points",
         path: "points",
-        element: <Points />
+        element: <Points />,
+        imgPath: "points.png"
     },
 ];
 
+interface Project {
+    name: string,
+    element: JSX.Element,
+    path: string,
+    imgPath: string
+}
 export const mainRoute: RouteObject = {
     path: "/",
     element: <Home />,
