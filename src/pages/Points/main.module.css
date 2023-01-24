@@ -4,7 +4,8 @@
 }
 
 .tools__btn{
-    font-size: .75em;
+    width: 48px;
+    height: 48px;
     padding: 1em;
     border: none;
     cursor: pointer;
@@ -13,8 +14,9 @@
     left: 50%;
     text-transform: uppercase;
     z-index: 5;
-    border-radius: .5em;
-    border: 1px solid black;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    color: var(--aqua-green);
 }
 
 .tools__btn:nth-child(1){
@@ -26,25 +28,23 @@
 
 .tools__btn:disabled{
     cursor: initial;
-    border: none;
-}
-
-.tools__btn:not(:disabled):active{
-    background-color: rgb(255, 191, 191);
+    background-color: var(--soft-blue);
+    color: var(--dark-blue);
 }
 
 .board{
     height: 100%;
-    background-color: rgb(186, 202, 236);
+    background-color: var(--aqua-green);
     overflow: hidden;
 }
 
 .point{
     width: 20px;
     height: 20px;
-    background-color: red; position: absolute;
+    background-color: var(--violet);
+    position: absolute;
     transform: translate(-50%,-50%);
     border-radius: 50%;
     z-index: 1;
-    position: absolute;
+    position: fixed;
 }

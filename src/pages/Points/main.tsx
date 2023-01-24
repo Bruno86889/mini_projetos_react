@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import pointsStyle from "./main.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUndo, faRedo,faTrash } from "@fortawesome/free-solid-svg-icons";
 
 interface PointProps {
     x: number, y: number
@@ -29,7 +31,7 @@ export default function Points() {
         setActionList(actionCopy);
     }
 
-    function clearPoints(){
+    function clearPoints() {
         setPoints([]);
         setActionList([]);
     }
@@ -38,22 +40,22 @@ export default function Points() {
         const { clientX, clientY } = ev;
         const newPoint = { x: clientX, y: clientY };
 
-        if(actionList.length > 0) setActionList([])
+        if (actionList.length > 0) setActionList([])
         setPoints([...points, newPoint]);
     };
 
     return (
         <div className={pointsStyle.container}>
             <button disabled={(points.length > 0 ? false : true)} className={pointsStyle.tools__btn} onClick={() => undo()}>
-                desfazer
+                <FontAwesomeIcon icon={faUndo}/>
             </button>
 
-            <button disabled={(points.length > 0 ? false : true)} className={pointsStyle.tools__btn} onClick={() => clearPoints()}>
-                apagar
+            <button className={pointsStyle.tools__btn} onClick={() => clearPoints()}>
+                <FontAwesomeIcon icon={faTrash}/>
             </button>
 
             <button disabled={(actionList.length > 0 ? false : true)} className={pointsStyle.tools__btn} onClick={() => redo()}>
-                refazer
+                <FontAwesomeIcon icon={faRedo}/>
             </button>
 
             <div className={pointsStyle.board} onClick={addPoint}>

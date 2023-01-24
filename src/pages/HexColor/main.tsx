@@ -4,7 +4,7 @@ import { useState } from "react"
 
 export default function HexColor() {
     const [change, setChange] = useState<boolean>(false);
-    const [color, setColor] = useState<string>("#FFFFFFF");
+    const [color, setColor] = useState<string>("#DFF587");
     const [shouldUpdate,setShouldUpdate] = useState<boolean>(true);
 
     function generateColor() {

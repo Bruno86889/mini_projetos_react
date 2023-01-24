@@ -1,6 +1,3 @@
-:root{
-    --text-color: rgb(92, 169, 82);
-}
 .hex{
     width: 100vw;
     height: 100vh;
@@ -9,35 +6,30 @@
     gap: 2em;
     align-items: center;
     justify-content: center;
-    background-color: black;
-    transition: .5s background;
+    background-color: var(--soft-yellow);
+    transition: .5s background-color;
 }
 
 .hex__btn{
     mix-blend-mode: difference;
-    color: rgb(0, 0, 0);
+    color: var(--soft-blue);
     padding: 1rem 2rem;
     cursor: pointer;
     border: none;
-    background-color: #a45555;
-    border-radius: .75rem;
+    background-color:var(--dark-blue);
+    border-radius: var(--radius);
     text-transform: uppercase;
     user-select: none;
-    box-shadow: 0 2px 4px -3px yellow;
-    text-rendering: optimizeLegibility;
     outline: none;
     text-decoration: none;
-}
-
-.hex__btn:active{
-    background-color: #ffffffa0;
+    text-rendering: optimizeLegibility;
 }
 
 .hex__code{
     width: max-content;
     height: max-content;
-    color: var(--text-color);
-    font-size: 2em;
+    color: white;
+    font-size: var(--xlarge);
     letter-spacing: .25em;
     mix-blend-mode: difference;
 }
