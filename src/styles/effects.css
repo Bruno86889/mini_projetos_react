@@ -1,0 +1,5 @@
+:root{
+    --border: 1px solid var(--dark-blue);
+    --focus: 2px solid var(--dark-blue);
+    --radius: 4px;
+}

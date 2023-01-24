@@ -1,23 +1,36 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+@import url("./colors.css");
+@import url("./effects.css");
+@import url("./font.css");
 
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: var(--family);
+  font-size: var(--medium);
+  color: var(--dark-blue);
+  background: var(--ice-blue);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
 
-body {
-  width: 100vw;
-  min-height: 100vh;
+  overscroll-behavior-x: none;
 }
 
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+::-webkit-scrollbar{
+  width: 4px;
+}
+
+@media screen and (min-width: 800px) {
+  body{
+    overscroll-behavior-y: none;
+  }
 }

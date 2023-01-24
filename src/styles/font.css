@@ -1,0 +1,11 @@
+:root{
+    --family: "Ubuntu", "Segoe UI", sans-serif;
+    --line-height: 1.5rem;
+
+    /* font size */
+    --xlarge: 2rem; /*32px*/
+    --large: 1.5rem; /*24px*/
+    --medium: 16px;
+    --small: .75rem; /*12px*/
+    --xsmall: .5rem; /*10px*/
+}
